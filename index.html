@@ -1,6 +1,4 @@
-<?php 
-    session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,17 +113,7 @@
   </a>
 
 </div>
-<?php
-		//checking if session data about visits exists
-		if( isset($_SESSION['visits']) ){
-			$_SESSION['visits'] = $_SESSION['visits'] +1;    
-		} else {
-		//creating a visits variable in session 
-		$_SESSION['visits'] = 1;
-		}
-		//accessing data from session
-		echo "<p><center>Number of Hits <strong>" .$_SESSION['visits']. "</strong> </center></p>"
-	?>
+
 <div class="jumbotron text-center" style="margin-bottom:0" >
   <h1>Contact Us</i></h1>
   <p><i><b>kirtihora@gmail.com</b></i></p>
