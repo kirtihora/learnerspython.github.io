@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Syllabus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<style>
+*{margin:0; padding:0; box-sizing:border-box}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.maindiv{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 60px;
+	 margin: 10px;
+	line-height: 30px;
+	justify-content: space-between;
+	background-color: DodgerBlue;
+	aligh-items:center;}
+
+.flip-box {
+  background-color: #f1f1f1;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  padding: 20px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+}
+</style>
+</head>
+
+<body>
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active">IMPORTANT LINKS</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><b>SYLLABUS 2020</b></a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="sYLLABUS_IP_2020-21.pdf">XI & XII - IP</a>
+      <a class="dropdown-item" href="CS_Syllabus_2020-21.pdf">XI & XII - CS</a>
+    </div>
+
+    </li>
+    <li>
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><b>ASSIGNMENTS</b></a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="CO_Assignment.pdf">Computer Organisation</a>
+      <a class="dropdown-item" href="ITERATION_DATAFRAME.pdf">Iteration On Dataframe with Solutions</a>
+      
+          </div>
+  </li>
+
+<li>
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><b>PYTHON NOTES</b></a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="sqlwithpy.pdf">SQL With Python-Notes2</a>
+      <a class="dropdown-item" href="mysql with python.pdf">SQL With Python-Notes1</a>
+       <a class="dropdown-item" href="ch_1_2_combined_xii.pdf">Lesson 1 & 2 XII-Notes1</a>
+       <a class="dropdown-item" href="ILOC.pdf">PANDAS ILOC()</a>
+      <a class="dropdown-item" href="csv notes2.pdf">CSV File - Notes2</a>
+	<a class="dropdown-item" href="loops.pdf">Python Loops</a>
+          </div>
+  </li>
+
+<!--
+  <li class="nav-item">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><b>CBSE CIRCULARS</b></a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="http://www.cbse.nic.in/newsite/index.html">CBSE SITE</a>
+      
+          </div>
+  </li>
+-->
+
+  
+</ul>
+
+<body>
+<br><br>
+<h4>Click on Box to Read Notes</h4>
+
+<div class="maindiv">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>DATAFRAME - QUANTILE</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Click to Read</h2>
+	<a class="nav-link" href="DATAFRAME_QUANTILE.pdf"><b>DATAFRAME - QUANTILE</b></a>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>PANDAS - DATAFRAME</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Click to Read</h2>
+	<a class="nav-link" href="dataframe.pdf"><b>DATAFRAMES</b></a>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>PANDA - SOLVED ASSIGNMENT</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Click to Read</h2>
+	<a class="nav-link" href="PANDA.PDF"><b>PANDA- SOLVED ASSIGNMENT</b></a>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>DataFrame - SERIES</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Click to Read</h2>
+	<a class="nav-link" href="dataframe_series.pdf"><b>DataFrame - SERIES</b></a>
+    </div>
+  </div>
+</div>
+
+
+<!-- SECOND LINE-->
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>DATAFRAME - PIVOT TABLE ASSIGNMENT</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Click to Read</h2>
+	<a class="nav-link" href="PIVOT.PDF"><b>DATAFRAME - PIVOT TABLE ASSIGNMENT</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>ITERATION ON DATAFRAME</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Click to Read</h2>
+	<a class="nav-link" href="iteration on dataframe.pdf"><b>ITERATION ON DATAFRAME</b></a>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>MYSQL WITH PYTHON</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Click to Read</h2>
+	<a class="nav-link" href="mysql with python.pdf"><b>MYSQL WITH PYTHON</b></a>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>CSV FILES PYTHON</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Click to Read</h2>
+	
+	<a class="nav-link" href="csv notes.PDF"><b>CSV FILE PYTHON</b></a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+

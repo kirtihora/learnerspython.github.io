@@ -1,0 +1,143 @@
+<?php 
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 20%;
+    height: 20%;
+  	}
+  .jumbotron {
+		padding-top:0px;
+		padding-bottom:0px;
+		background-color:cyan
+		
+		
+	}
+  
+  </style>
+</head>
+
+<body>
+<div style = "width:100%">
+
+
+<div class="jumbotron text-center" style="margin-bottom:0" >
+  <h1>Learners Python <i> @ XI & XII</i></h1>
+  <p><i><b>Learning Python Is Fun....Lets do it together!!</b></i></p>
+</div>
+
+<div class="container-fluid" >
+  <!-- <h4 class=" display-5 bg-primary text-white">LEARN PYTHON WITH KIRTI</h4> -->
+   <ul class="nav flex-column">
+
+  <li class="nav-item">
+     <a class="nav-link" href="syllabus.html"><b>CBSE SYLLABUS</b></a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="syllabus.html"><b>Assignments</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="syllabus.html"><b>Notes</b> </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="blog.html"><b>IT Blog</b> </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="projects.html"><b>Python Projects XII </b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://www.cbse.nic.in/newsite/circulars.html"><b>CBSE Circulars</b> </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="feedback2.php"><b>Contact Us</b> </a>
+    </li>
+  </ul>
+</div>
+
+<hr>
+
+
+
+  
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="k1.jpg" height="200px" alt="python1">
+     </div>
+    <div class="carousel-item ">
+      <img src="k3.jpg" height="200px"  alt="py2">
+    </div>
+    <div class="carousel-item">
+      <img src="a7.jpg" height="200px" alt="py3">
+    </div>
+    <div class="carousel-item">
+      <img src="a1.png" height="200px" alt="py4">
+    </div>
+    <div class="carousel-item">
+      <img src="a5.png" height="200px" alt="py5">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+<?php
+		//checking if session data about visits exists
+		if( isset($_SESSION['visits']) ){
+			$_SESSION['visits'] = $_SESSION['visits'] +1;    
+		} else {
+		//creating a visits variable in session 
+		$_SESSION['visits'] = 1;
+		}
+		//accessing data from session
+		echo "<p><center>Number of Hits <strong>" .$_SESSION['visits']. "</strong> </center></p>"
+	?>
+<div class="jumbotron text-center" style="margin-bottom:0" >
+  <h1>Contact Us</i></h1>
+  <p><i><b>kirtihora@gmail.com</b></i></p>
+</div>
+
+
+
+<footer>
+  <p class="text-center bg-dark text-white">@copyright 2020</p>
+  </footer>
+
+</div>
+</body>
+</html>
+
